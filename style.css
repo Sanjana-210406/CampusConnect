@@ -1,0 +1,164 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #222;
+}
+
+header {
+    background: linear-gradient(135deg, #171c45, #3949ab);
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+}
+
+.navbar h2 {
+    font-size: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 85px 20px 100px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #e0e4ff;
+}
+
+.btn {
+    display: inline-block;
+    background: #ffbd59;
+    color: #222;
+    padding: 13px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.events {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.events h2,
+.registration h2 {
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.event-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    background: white;
+    width: 280px;
+    padding: 28px 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.event-card h3 {
+    color: #303f9f;
+    margin-bottom: 15px;
+}
+
+.event-card p {
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.date {
+    color: #666;
+    font-size: 14px;
+}
+
+button {
+    background: #3949ab;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover,
+.btn:hover {
+    opacity: 0.85;
+}
+
+.registration {
+    background: white;
+    margin: 20px 8% 60px;
+    padding: 40px 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+form {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+select {
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+#message {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+}
+
+footer {
+    background: #171c45;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .navbar {
+        padding: 20px;
+    }
+}
